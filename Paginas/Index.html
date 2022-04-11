@@ -29,20 +29,57 @@
 	    	</div>
 
 	        <div class="conteudo">
+	 
 	        		<center>
 	        		<h1>Painéis solares</h1>
 	        		<p>Algo sobre <span class="verde"><b>painéis solares</b></span></p>
+	        	    </center>
+	        	    <div class ="bodi">
 
-	        		<img src="../Imagens/painel_solar.jpg" alt="Painel Solvar">
-	        		<figcaption>Painel solar</figcaption>
+	        		<div class="slider">
+	        			<div class="slides">
+	        				<input type="radio" name="radio-bnt" id="radio1" checked="">
+	        				<input type="radio" name="radio-bnt" id="radio2">
 
-	        		<br/>
+	        				<div class="slide first">
+	        					<img src="../Imagens/foto1.jpg" alt="Foto1">
+	        				</div>
 
-	        		<h3>Como funcionam?</h3>
+	        				<div class="slide">
+	        					<img src="../Imagens/foto2.jpg" alt="Foto1">
+	        				</div>
+
+	        				<div class="navigation-auto">
+	        					 <div class="auto-bnt1"></div>
+	        					 <div class="auto-bnt2"></div>
+	        				</div>
+
+	        				<div class="navigation-manual">
+	        					<label for="radio1" class="manual-bnt"></label>
+	        					<label for="radio2" class="manual-bnt"></label>
+	        				</div>
+	        			</div>
+	        		</div>
+	        	</div>
+
+	        	<script type="text/javascript">
+	        		var counter = 1; 
+	        		setInterval(function(){
+	        		document.getElementById('radio' + counter).checked = true; 
+	        		counter++;
+	        		if(counter > 2){
+	        			counter	= 1;
+	        		}
+	        	}, 5000);
+	        	</script>
+
+	        		<center>
+	        		
 	        		<div class="texto">
+	        			<h3>Como funcionam?</h3>
 	        			A placa solar funciona quando os fótons atingem as células fotovoltaicas, fazendo com que alguns dos elétrons que circundam os átomos se desprendam e migrem para a parte da célula de silício que está com ausência de elétrons, criando uma corrente elétrica, chamada de energia solar fotovoltaica.
 	    			</div>
-	    			<center>
+	    			</center>
 	    	</div>
 		</body>
 
