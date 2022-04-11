@@ -155,8 +155,8 @@ div.sobre{
 	 display: flex;
 }
 div.sobre img{
- width: 30%;
- padding-left: 5%;
+ width: 35%;
+ padding-left: 10%;
  padding-bottom: 6.5%;
 }
 
@@ -175,12 +175,10 @@ div.texto {
 	padding-bottom: 2%;
 }
 
-.vantagemfot img {
-	width: 100%;
-	
+.vantagemfot img{
+	width: 92%;
+	padding-left: 7%;
 }
-
-
 
 hr{
   border-bottom: 5px solid #F8BA21;
