@@ -13,7 +13,7 @@ body{
   background-color: #191967;
   background-attachment: fixed;
 }
-/*-Menu do topo-*/
+/*-Menu do topo, nav bar-*/
 div.topo{
 	display: block;
 	background-color: #1286E6;
@@ -36,7 +36,6 @@ div.topo li.diferentona{
 	text-decoration: none;
 	color: black;
 }
-
 div.topo h1{
   /*O primeiro é altura o segundo é largura*/
   padding: 2.25rem 2rem;
@@ -44,8 +43,8 @@ div.topo h1{
 div.topo li a:hover{  
   background-color: #78BBF3;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
 }
-
 div.topo li a#info:hover{  
   background-color: #8C9FFA;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
@@ -59,6 +58,7 @@ span.ativada h4{
 	word-spacing:-2px;
 	overflow: hidden;
 }
+/*imagem animação*/
 .bodi{	
 	background-color: rgba(149, 175, 213, 0.5);
 	margin-top: -180px;
@@ -70,13 +70,13 @@ span.ativada h4{
 }
 .slider{
 	width: 100%;
-	height: 500px;
+	height: 550px;
 	overflow: hidden;
+	box-shadow: 0px 7px 5px 1px rgba(0, 0, 0, 0.2);
 }
-
 .slides{
 width: 500%;
-height: 500px;
+height: 550px;
 display: flex;
 }
 .slides input{
@@ -86,17 +86,15 @@ display: none;
 	width: 20%;
 	transition: 2s;
 }
-
 .slide img{
 	width: 100%;
-	height: 500px;
+	height: 550px;
 }
-
 .navigation-manual{
 	position: absolute;
 	display: flex;
 	width: 83%;
-	margin-top: 470px;
+	margin-top: 520px;
 	margin-top: flex;
 	justify-content: center;
 }
@@ -107,31 +105,25 @@ display: none;
 	cursor: pointer;
 	transition: 1s;
 }
-
 .manual-bnt:not(:last-child){
 	margin-right: 10px;
 }
-
 .manual-bnt:hover{
 	background: #40D3DC;
 }
-
 #radio1:checked ~ .first{
 	margin-left: 0%; 
 }
-
 #radio2:checked ~ .first{
 	margin-left: -20%; 
 }
-
 .navigation-auto{
 	position: absolute;
 	display: flex;
 	width: 83%;
 	justify-content: center;
-	margin-top: 470px;
+	margin-top: 520px;
 }
-
 .navigation-auto div{
 	border: 2px solid #40D3DC;
 	padding: 5px;
@@ -141,14 +133,13 @@ display: none;
 .navigation-auto div:not(:last-child){
 margin-right: 10px;
 }
-
 #radio1:checked ~ .navigation-auto .auto-bnt1{
 	background: #40D3DC;
 }
-
 #radio2:checked ~ .navigation-auto .auto-bnt2{
 	background: #40D3DC;
 }
+/* conteudo-sobre */
 div.sobre{
 	background-color: rgba(149, 175, 213, 0.5);
 	 text-align:center;
@@ -159,32 +150,32 @@ div.sobre img{
  padding-left: 10%;
  padding-bottom: 6.5%;
 }
-
 div.texto {
 	padding-left: 10%;
 	text-align: justify;
 	width: 50%;
 	  font-size: 20px;
 }
-
-.verde{
-	color: green;
-}
+/*conteudo vantagens*/
 .aviso img{
 	width: 100%;
 	padding-bottom: 2%;
 }
-
 .vantagemfot img{
 	width: 92%;
 	padding-left: 7%;
 }
-
+/*css extra*/
+.verde{
+	color: green;
+}
+/*linha amarela*/
 hr{
   border-bottom: 5px solid #F8BA21;
   width:20%;
   opacity: .8;
 }
+/* Rodapé */
 footer{
   background-color: white;
   padding: 10px 20px 10px 40px;
