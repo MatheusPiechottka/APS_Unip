@@ -60,18 +60,16 @@ span.ativada h4{
 /*imagem animação*/
 .bodi{	
 	background-color: rgba(149, 175, 213, 0.5);
-	margin-top: -2rem;
+	margin-top: -180px;
 	padding-top: 50px;
 	height: 80vh;
 	display: flex;
 	align-items: center;
 	justify-content: center; 
-	max-height: 500px;
-	min-height: 480px;
 }
 .slider{
 	width: 100%;
-	height: 120%;
+	height: 135%;
 	overflow: hidden;
 	box-shadow: 0px 7px 5px 1px rgba(0, 0, 0, 0.2);
 }
@@ -88,14 +86,14 @@ display: none;
 	transition: 2s;
 }
 .slide img{
-	width: 100%;
-	height: 40rem;
+	width: 135%;
+	height: 135%;
 }
 .navigation-manual{
 	position: absolute;
 	display: flex;
 	width: 83%;
-	margin-top: 31rem;
+	margin-top: 520px;
 	margin-top: flex;
 	justify-content: center;
 }
@@ -123,7 +121,7 @@ display: none;
 	display: flex;
 	width: 83%;
 	justify-content: center;
-	margin-top: 31rem;
+	margin-top: 520px;
 }
 .navigation-auto div{
 	border: 2px solid #40D3DC;
@@ -156,9 +154,9 @@ div.sobre{
 div.sobre img{
  width: 35%;
  height: 20%;
- padding-left: 5%;
+ padding-left: 10%;
  padding-bottom: 3%;
- margin-top: 50px;
+ 	margin-top: 11%;
 }
 div.texto {
 	padding-left: 10%;
