@@ -213,16 +213,30 @@ div.texto {
 	height: 75px;
 }
 
-/* Conteudo vantagens */
-.aviso img {
-	width: 100%;
-	padding-bottom: 2%;
+/* Vantagem */
+
+.vantagem-pai {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 50px 80px 50px;
+	padding: 0px 0px 0px;
 }
 
-.vantagemfot img {
-	margin-top: -0.5%;
-	width: 92%;
-	padding-left: 7%;
+.vantagem-pai div {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 300px;
+	padding: 30px;
+	justify-content: center;
+	align-items: center;
+	text-align: justify;
+	word-spacing: 2px;
+}
+
+.vantagem-pai h5{
+	text-align: center;
+	font-weight: bold;
 }
 
 #linha-vantagens {
