@@ -62,12 +62,12 @@
 	<script type="text/javascript">
 		var counter = 1; 
 		setInterval(function(){
-		document.getElementById('radio' + counter).checked = true; 
-		counter++;
-		if(counter > 2){
-			counter	= 1;
-		}
-	}, 6000);
+			document.getElementById('radio' + counter).checked = true; 
+			counter++;
+			if(counter > 2){
+				counter	= 1;
+			}
+		}, 6000);
 	</script>
 
 	<div id="ancora-quemsomos">
@@ -84,46 +84,39 @@
 		</div>               
 	</div>
 
-	<!--Aviso em laranja-->
-	<div id="barra-laranja">
-		<p style="text-align: center; padding: 20px; color: white; font-size: 20px;"><strong>ECONOMIZE UTILIZANDO ENERGIA SOLAR</strong></p>
+	<!--tarja-->
+	<div id="tarja">
+		<p><strong>ECONOMIZE UTILIZANDO ENERGIA SOLAR</strong></p>
 	</div>
-	<br />
+
 	<!--Vantagem-->
 	<div id="ancora-vantagens">
 		<div class="vantagens">
-			<div class="texto" id="bloc1">
-				<h1>Vantagens</h1>
-				<hr id="linha-vantagens" />
-			</div>
-			<div class="vantagem-pai">  
-				<div>
-					<img src="../Imagens/soluclimpa.png" alt="reciclagem">
-					<br />
-					<h5>SOLUÇÃO LIMPA E RENOVAVEL</h5>
-					<br />
-					<p>A energia solar é sustentável porque sua matéria prima é originada da natureza, ou seja, a captação da energia elétrica feita pela luz do sol. Desta forma, os recursos naturais podem ser usados de forma abundante e renovável.</p>
+			<div class="grid-container">
+				<div class="grid-item">
+					<img class="card-vector" src="../Imagens/recycle-circle.svg"><br />
+					<strong>ENERGIA LIMPA<br />E RENOVÁVEL</strong><br />
+					<p class="grid-text">Fonte de energia que não gera problemas para o meio ambiente e 
+					preserva recursos naturais de extrema importância para o cotidiano das pessoas, 
+					como o combustível fóssil.</p>
 				</div>
-				<div>
-					<img src="../Imagens/reduc95energ.png" alt="redução de energia">
-					<br />
-					<h5>REDUÇÃO DE ATÉ 95% DE CUSTO DE ENERGIA</h5>
-					<br />
-					<p>Residências, comércios, indústrias e propriedades rurais podem obter até 95% de redução nos gastos com a conta de luz com a instalação dos sistemas fotovoltaicos em telhados e pequenos terrenos. A estimativa é da Associação Brasileira de Energia Solar Fotovoltaica ( ABSOLAR )</p>
+				<div class="grid-item">
+					<img class="card-vector" src="../Imagens/currency-circle.svg" /><br />
+					<strong>ECONOMIA NO<br />BOLSO</strong>
+					<p class="grid-text">O custo de aquisição e instalação dos painéis de energia solar é pago pela própria 
+						economia que será gerada na conta de luz a longo prazo.</p>
 				</div>
-				<div>
-					<img src="../Imagens/monitorcompleto.png" alt="monitoramento completo">
-					<br />
-					<h5>MONITORAMENTO COMPLETO</h5>
-					<br />
-					<p>Atraves dos sistemas de monitoramento, você consegue não só acompanhar a qualidade de energia gerada, mas também ligar ou desligar o seu sitema no seu tablet ou smartphone celular</p>
+				<div class="grid-item">
+					<img class="card-vector" src="../Imagens/check-circle.svg"><br />
+					<strong>ASSISTÊNCIA<br />COMPLETA</strong>
+					<p class="grid-text">Paineis solares raramente precisam de qualquer tipo de manutenção, mas caso seja necessário, estamos 
+						sempre disponíveis para fazer os reparos e ajustes necessários sem qualquer transtorno.</p>
 				</div>
-				<div>
-					<img src="../Imagens/pagfacil.png" alt="pagamento facilitado">
-					<br />
-					<h5>PAGAMENTO FACILITADO</h5>
-					<br />
-					<p>As melhores formas de pagamento para você adquirir seu Sistema Fotovoltaico, de linhas de crédito parceladas até financiamentos.</p>
+				<div class="grid-item">
+					<img class="card-vector" src="../Imagens/flash-circle.svg"><br />
+					<strong>MONITORAMENTO<br />COMPLETO</strong><br />
+					<p class="grid-text">Com os nossos produtos é possível monitorar tudo o que acontece em tempo real, desde o quanto de energia está sendo 
+						gerado até informações com relação a sustentabilidade.</p>
 				</div>
 			</div>
 		</div> 	 
