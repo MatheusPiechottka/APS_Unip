@@ -22,8 +22,33 @@ div.topo {
     transition: all 200ms ease-out;
 }
 
-ul.nav {
+a, a:hover, a:focus, a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
+@media (max-width: 1024px){
+	body {
+		padding: 0rem 0rem;
+	}
+}
+
+.nav {
+	display: grid;
+	grid-template-columns: 20% 40% 40%;
+	text-align: center;
+	font-size: 1.2em;
 	overflow: hidden;
+}
+
+.nav-btn {
+	padding: 30px 0px 0px 0px;
+}
+
+.nav-btn:hover {
+	background-color: #78BBF3;
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
+	transition: 0.4s;
 }
 
 div.topo img {
@@ -31,13 +56,7 @@ div.topo img {
 	height: 6rem;
 }
 
-div.topo li a {
-	float: left;
-	text-decoration: none;
-	color: black;
-}
-
-div.topo li.diferentona {
+.diferentona {
 	text-decoration: none;
 	color: black;
 }
@@ -45,12 +64,6 @@ div.topo li.diferentona {
 div.topo h2{
   /*O primeiro é altura o segundo é largura*/
   padding: 1.55rem 2rem;
-}
-
-div.topo li a:hover {  
-	background-color: #78BBF3;
-	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
-	transition: 0.4s;
 }
 
 div.topo li a#info:hover {  
@@ -73,6 +86,7 @@ span.ativada h4 {
 .animacao {	
 	background-color: rgba(149, 175, 213, 0.5);
 	margin-top: -2rem;
+	margin-bottom: 60px;
 	padding-top: 50px;
 	height: 80vh;
 	display: flex;
@@ -212,9 +226,9 @@ div.texto {
 	width: 100%;
 	height: 75px;
 	text-align: center;
-	 padding: 20px; 
-	 color: white; 
-	 font-size: 20px;
+	padding: 20px; 
+	color: white; 
+	font-size: 20px;
 }
 
 /* tarja - cards */
