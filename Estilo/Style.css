@@ -49,7 +49,7 @@ a:active {
 }
 
 .nav-btn:hover {
-	background-color: #78BBF3;
+	background-color: #107cff;
 	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
 	transition: 0.4s;
 }
@@ -75,7 +75,7 @@ span.ativada h4 {
 
 /* Conteudo */
 .conteudo {
-	background-color: rgb(149, 175, 213);
+	background-color: white;
 	word-spacing: -2px;
 	overflow: hidden;
 }
@@ -222,7 +222,6 @@ span.ativada h4 {
 
 /* Conteudo sobre */
 div.sobre {
-	background-color: rgba(149, 175, 213, 0.5);
 	text-align: center;
 	display: flex;
 	padding: 20px 0px;
@@ -256,8 +255,8 @@ div.texto {
 		width: 80%;
 	}
 
-	div.explic p {
-		font-size: 1rem;
+	.p-big {
+		font-size: 1em;
 	}
 }
 
@@ -269,7 +268,7 @@ div.texto {
 
 /* tarja - economize utilizando energia solar */
 #tarja {
-	background-color: #DB971A;
+	background-color: #F5740B;
 	width: 100%;
 	height: 75px;
 	text-align: center;
@@ -309,7 +308,7 @@ div.texto {
 }
 
 #ancora-vantagens {
-	background-color: #0264DB;
+	background-color: #005FFF;
 }
 
 #linha-vantagens {
@@ -328,7 +327,7 @@ div.texto {
 }
 
 .grid-item {
-	background-color: #2F8DFF;
+	background-color: #2092F5;
 	text-align: center;
 	margin: 10px 10px 10px 10px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -376,7 +375,7 @@ select {
 
 .conteudo_dos_paineis .data {
 	padding: 25px;
-	background-color: rgb(167, 210, 245);
+	background-color: #e6e6e6;
 	border-radius: 0px 0px 3px 3px;
 }
 
@@ -407,6 +406,6 @@ footer {
 	padding: 10px 20px 10px 40px;
 	text-align: left;
 	box-shadow: 7px 7px 4px 2px rgba(0, 0, 0, 0.1);
-	background-color: #2B2947;
+	background-color: #005FFF;
 	color: white;
 }
