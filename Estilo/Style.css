@@ -69,11 +69,6 @@ div.topo h2 {
 	padding: 1.55rem 2rem;
 }
 
-div.topo li a#info:hover {
-	background-color: #8C9FFA;
-	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.2);
-}
-
 span.ativada h4 {
 	color: rgba(84, 84, 84, 0.5);
 }
@@ -100,7 +95,18 @@ span.ativada h4 {
 
 #info {
 	width: 50%;
-	font-size: 1.8rem;
+}
+
+.p-padding {
+	padding-inline: 40px;
+}
+
+.p-big {
+	font-size: 1.7em;
+}
+
+.p-medium {
+	font-size: 1.0em;
 }
 
 /* Imagem animação */
