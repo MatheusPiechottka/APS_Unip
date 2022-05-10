@@ -228,6 +228,7 @@ div.sobre img {
 	width: 35%;
 	height: 20%;
 	padding-left: 5%;
+	padding-right: 1.2%;
 	padding-bottom: 3%;
 	margin-top: 50px;
 	min-width: 250px;
@@ -335,67 +336,63 @@ div.texto {
 /* Escolhas de painel */
 
 .wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 70px 0;
-    max-width: 90%;
-    margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 70px 0;
+	max-width: 95%;
+	margin: 0 auto;
 }
 
-.menu, .conteudo_dos_paineis {
-    width: 100%;
+.menu,
+.conteudo_dos_paineis {
+	width: 100%;
 }
 
 select {
-    width: 100%;
-    padding: 15px;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    border: none;
-    border-radius: 8px;
-	text-decoration: none;
-    border: none;
-    appearance: none;
-    background: #E8EAF6 url(../Imagens/triangulo.png) no-repeat;
-    background-position: 95% 55%;
-    background-size: 22px;
+	width: 100%;
+	padding: 15px;
+	font-size: 16px;
+	font-weight: 700;
+	font-family: 'Poppins', sans-serif;
+	border: none;
+	border-radius: 3px 3px 0px 0px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	appearance: none;
+	background: #E8EAF6 url(../Estilo/fontawesome-free/svgs/solid/angle-down.svg) no-repeat;
+	background-position: 95% 55%;
+	background-size: 22px;
 }
 
 .conteudo_dos_paineis {
-    margin: 30px 0;
+	margin: 1px 0;
 }
 
 .conteudo_dos_paineis .data {
-    padding: 25px;
-    background-color: white;
-    border-radius: 8px;
+	padding: 25px;
+	background-color: rgb(167, 210, 245);
+	border-radius: 0px 0px 3px 3px;
 }
 
 .conteudo_dos_paineis p {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid gainsboro;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid gainsboro;
 }
 
 .conteudo_dos_paineis p:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 .conteudo_dos_paineis p span {
-    float: right;
-    font-weight: normal;
-}
-
-.image {
-    text-align: center;
+	float: right;
+	font-weight: normal;
 }
 
 .data {
-    display: none;
+	display: none;
 }
 
 /* Rodapé */
