@@ -85,6 +85,24 @@ span.ativada h4 {
 	overflow: hidden;
 }
 
+.explic {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 2rem;
+	padding-bottom: 2.5rem;
+	align-items: center;
+}
+
+.explic img {
+	border-radius: 100%;
+	width: 35%;
+}
+
+#info {
+	width: 50%;
+	font-size: 1.8rem;
+}
+
 /* Imagem animação */
 .animacao {
 	background-color: rgba(149, 175, 213, 0.5);
@@ -229,6 +247,10 @@ div.texto {
 
 	div.sobre img {
 		width: 80%;
+	}
+
+	div.explic p {
+		font-size: 1rem;
 	}
 }
 
