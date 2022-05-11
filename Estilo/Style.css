@@ -22,12 +22,12 @@ div.topo {
 	transition: all 200ms ease-out;
 }
 
-a,
-a:hover,
-a:focus,
-a:active {
+a, a:hover {
+	display: block;
+	height: 100%;
+	width: 100%;
 	text-decoration: none;
-	color: inherit;
+	color: black;
 }
 
 @media (max-width: 1024px) {
