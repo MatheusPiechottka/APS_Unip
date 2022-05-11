@@ -59,7 +59,7 @@ div.topo img {
 	height: 6rem;
 }
 
-.diferentona {
+.logo {
 	text-decoration: none;
 	color: black;
 }
@@ -71,6 +71,10 @@ div.topo h2 {
 
 span.ativada h4 {
 	color: rgba(84, 84, 84, 0.5);
+}
+
+.underline {
+	border-bottom: 4px solid #F5740B;
 }
 
 /* Conteudo */
@@ -258,12 +262,6 @@ div.texto {
 	.p-big {
 		font-size: 1em;
 	}
-}
-
-#linha-sobrenos {
-	border-bottom: 5px solid #F8BA21;
-	opacity: .8;
-	width: 180px;
 }
 
 /* tarja - economize utilizando energia solar */
