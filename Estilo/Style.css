@@ -5,10 +5,6 @@ body {
 	padding: 0rem 10rem;
 	margin: 0;
 	font-size: 1rem;
-}
-
-/* Fundo da tela */
-.fundo {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Imagens/fundo3.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -64,11 +60,6 @@ div.topo img {
 	color: black;
 }
 
-div.topo h2 {
-	/*O primeiro é altura o segundo é largura*/
-	padding: 1.55rem 2rem;
-}
-
 span.ativada h4 {
 	color: rgba(84, 84, 84, 0.5);
 }
@@ -78,6 +69,7 @@ span.ativada h4 {
 }
 
 /* Conteudo */
+
 .conteudo {
 	background-color: white;
 	word-spacing: -2px;
@@ -105,13 +97,11 @@ span.ativada h4 {
 	padding-inline: 40px;
 }
 
-.p-big {
-	font-size: 1.7em;
-}
-
 .p-medium {
 	font-size: 1.0em;
 }
+
+/*p-medium media query*/
 
 @media (max-width: 3500px) {
 	.p-medium {
@@ -163,6 +153,7 @@ span.ativada h4 {
 
 
 /* Imagem animação */
+
 .animacao {
 	background-color: rgba(149, 175, 213, 0.5);
 	margin-top: -2rem;
@@ -274,6 +265,7 @@ span.ativada h4 {
 }
 
 /* Conteudo sobre */
+
 div.sobre {
 	text-align: center;
 	display: flex;
@@ -293,21 +285,17 @@ div.sobre img {
 }
 
 div.texto {
+	width: 60%;
 	padding-inline: 5%;
 	text-align: justify;
 }
 
 @media (max-width: 1024px) {
-	div.texto {
-		width: 80%;
-	}
-
-	div.sobre img {
-		width: 80%;
-	}
+	
 }
 
 /* tarja - economize utilizando energia solar */
+
 #tarja {
 	background-color: #F5740B;
 	width: 100%;
@@ -319,30 +307,6 @@ div.texto {
 }
 
 /* tarja - cards */
-
-.vantagem-pai {
-	display: flex;
-	justify-content: space-evenly;
-	margin: 50px 80px 50px;
-	padding: 0px 0px 0px;
-}
-
-.vantagem-pai div {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	width: 300px;
-	padding: 30px;
-	justify-content: center;
-	align-items: center;
-	text-align: justify;
-	word-spacing: 2px;
-}
-
-.vantagem-pai h5 {
-	text-align: center;
-	font-weight: bold;
-}
 
 .vantagens {
 	padding: 15px;
@@ -366,6 +330,8 @@ div.texto {
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
 }
+
+/*grid-container media query*/
 
 @media (max-width: 1260px){
 	.grid-container {
