@@ -293,10 +293,8 @@ div.sobre img {
 }
 
 div.texto {
-	padding-left: 2%;
+	padding-inline: 5%;
 	text-align: justify;
-	width: 60%;
-	font-size: 20px;
 }
 
 @media (max-width: 1024px) {
@@ -306,10 +304,6 @@ div.texto {
 
 	div.sobre img {
 		width: 80%;
-	}
-
-	.p-big {
-		font-size: 1em;
 	}
 }
 
@@ -370,7 +364,31 @@ div.texto {
 
 .grid-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+@media (max-width: 1260px){
+	.grid-container {
+		grid-template-columns: 50% 50%;
+	}
+}
+
+@media (max-width: 1000px) {
+	.grid-container {
+		grid-template-columns: 25% 25% 25% 25%;
+	}
+}
+
+@media (max-width: 850px){
+	.grid-container {
+		grid-template-columns: 50% 50%;
+	}
+}
+
+@media (max-width: 450px) {
+	.grid-container {
+		grid-template-columns: 100%;
+	}
 }
 
 .grid-item {
