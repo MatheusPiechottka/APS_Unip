@@ -2,20 +2,13 @@
 
 /* Body */
 body {
-	padding: 0rem 10rem;
+	padding: 0rem 10%;
 	margin: 0;
 	font-size: 1rem;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Imagens/fundo3.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-}
-
-/* Menu do topo, nav bar */
-div.topo {
-	display: block;
-	background-color: #2F8DFF;
-	transition: all 200ms ease-out;
 }
 
 a, a:hover {
@@ -26,6 +19,7 @@ a, a:hover {
 	color: black;
 }
 
+/*Remove as bordas verticais em telas com largura inferior a 1024px*/
 @media (max-width: 1024px) {
 	body {
 		padding: 0rem 0rem;
@@ -35,9 +29,22 @@ a, a:hover {
 .nav {
 	display: grid;
 	grid-template-columns: 25% 25% 25% 25%;
+	width: 80%;
+	z-index: 99999; /*evita que a navbar se esconda atrás do conteúdo*/
+	position: fixed;
+	top: 0;
 	text-align: center;
+	background-color: #2F8DFF;
 	font-size: 1.2em;
 	overflow: hidden;
+	transition: top 0.3s;
+}
+
+/*corrige a largura da navbar quando as bordas verticais são removidas*/
+@media (max-width: 1024px) {
+	.nav {
+		width: 100%;
+	}
 }
 
 .nav-btn {
@@ -288,10 +295,6 @@ div.texto {
 	width: 60%;
 	padding-inline: 5%;
 	text-align: justify;
-}
-
-@media (max-width: 1024px) {
-	
 }
 
 /* tarja - economize utilizando energia solar */
