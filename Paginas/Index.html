@@ -19,36 +19,36 @@
 
 <body class="fundo">
 
-	<!--Nav bar-->
-	<div class="topo">
-		<div class="nav">
-			<div class="logo">
-				<a href="#"><img src="../Imagens/painel_icon.png"></a>
-			</div>
-			<div class="nav-btn">
-				<a href="#ancora-vantagens">Vantagens</a>
-			</div>
-			<div class="nav-btn">
-				<a href="#ancora-paineis">Painéis</a>
-			</div>
-			<div class="nav-btn">
-				<a href="#ancora-quemsomos">Quem somos</a>
-			</div>
-		</div>
-	</div>
-
 	<!--Conteudo-->
 	<div class="conteudo">
+		<!--Nav bar-->
+		<div class="topo">
+			<div class="nav" id="navbar">
+				<div class="logo">
+					<a href="#"><img src="../Imagens/painel_icon.png"></a>
+				</div>
+				<div class="nav-btn">
+					<a href="#ancora-vantagens">Vantagens</a>
+				</div>
+				<div class="nav-btn">
+					<a href="#ancora-paineis">Painéis</a>
+				</div>
+				<div class="nav-btn">
+					<a href="#ancora-quemsomos">Quem somos</a>
+				</div>
+			</div>
+		</div>
+
 		<div class="animacao">
 			<div class="slider">
 				<div class="slides">
 					<input type="radio" name="radio-bnt" id="radio1" checked="">
 					<input type="radio" name="radio-bnt" id="radio2">
 					<div class="slide first">
-						<img src="../Imagens/foto1.jpg" alt="Foto1">
+						<img class="carousel" src="../Imagens/pexels-pixabay-371900.jpg" alt="Foto1">
 					</div>
 					<div class="slide">
-						<img src="../Imagens/foto2.jpg" alt="Foto2">
+						<img class="carousel" src="../Imagens/pexels-pixabay-159397.jpg" alt="Foto2">
 					</div>
 					<div class="navigation-auto">
 						<div class="auto-bnt1"></div>
@@ -154,7 +154,6 @@
 					<div class="explic">
 						<img src="../Imagens/como_funciona.png" alt="Foto1">
 						<div id="info">
-							<h1><span class="underline">O que é</span></h1><br />
 							<p class="p-medium">É a tecnologia que está a mais tempo no mercado, além de ser a mais 
 								eficiente. São facilmente reconhecíveis pela sua cor uniforme e cantos tipicamente 
 								arredondados. São formados a partir de um único cristal ultrapuro, tendo uma eficiência
@@ -167,7 +166,6 @@
 					<div class="explic">
 						<img src="../Imagens/como_funciona.png" alt="Foto1">
 						<div id="info">
-							<h1><span class="underline">O que é</span></h1><br />
 							<p class="p-medium">Tecnologia introduzida no mercado em 1981. Utiliza um método diferente 
 								de fundição dos cristais quando comparado ao silício monocristalino. São mais fáceis 
 								de serem produzidos, mas possuem uma eficiência ligeiramente menor (entre 14 e 20%) 
@@ -179,7 +177,6 @@
 					<div class="explic">
 						<img src="../Imagens/como_funciona.png" alt="Foto1">
 						<div id="info">
-							<h1><span class="underline">O que é</span></h1><br />
 							<p class="p-medium">Utiliza células solares baseadas em silício amorfo, resultando em uma 
 								produção de energia com baixa eficiência. Mesmo com o uso de técnicas para tentar 
 								melhorar seu desempenho, como o “empilhamento”, onde várias camadas podem ser combinadas,
@@ -192,7 +189,6 @@
 					<div class="explic">
 						<img src="../Imagens/como_funciona.png" alt="Foto1">
 						<div id="info">
-							<h1><span class="underline">O que é</span></h1><br />
 							<p class="p-medium">É a única tecnologia de painéis solares de película fina que superou o 
 								custo e a eficiência de painéis solares de silício cristalino, operando entre 9 e 16% 
 								de eficiência. Normalmente são utilizados em grandes usinas solares (PORTAL..., C2014)</p>
@@ -203,7 +199,6 @@
 					<div class="explic">
 						<img src="../Imagens/como_funciona.png" alt="Foto1">
 						<div id="info">
-							<h1><span class="underline">O que é</span></h1><br />
 							<p class="p-medium">Tecnologia de filme fino que contém menos cádmio 
 								(material tóxico encontrado em células CdTe). Sua eficiência fica entre 10 e 12% 
 								(PORTAL..., C2014)</p>
@@ -214,7 +209,6 @@
 					<div class="explic">
 						<img src="../Imagens/como_funciona.png" alt="Foto1">
 						<div id="info">
-							<h1><span class="underline">O que é</span></h1><br />
 							<p class="p-medium">Tipo de célula solar de polímero, sendo idealizada há muitos anos como uma 
 								tecnologia fotovoltaica flexível e de baixo custo. Possuem eficiência variada 
 								(PORTAL..., C2014)</p>
@@ -225,7 +219,6 @@
 					<div class="explic">
 						<img src="../Imagens/como_funciona.png" alt="Foto1">
 						<div id="info">
-							<h1><span class="underline">O que é</span></h1><br />
 							<p class="p-medium">Tecnologia nova conhecida por “heterojunção”, que possui eficiência entre 
 								20 e 24%. Produz bastante energia por metro quadrado e funciona bem em altas 
 								temperaturas, porém ainda não está disponível no mercado. (PORTAL..., C2014)</p>
@@ -297,6 +290,17 @@
 		}).change();
 	});
 
+	//navbar
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function() {
+	var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 
 </script>
 
