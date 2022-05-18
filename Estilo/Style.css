@@ -1,6 +1,3 @@
-@charset "UTF-8";
-
-/* Body */
 body {
 	padding: 0rem 10%;
 	margin: 0;
@@ -11,19 +8,19 @@ body {
 	background-attachment: fixed;
 }
 
+/*Remove as bordas verticais em telas com largura inferior a 1024px*/
+@media (max-width: 1024px) {
+	body {
+		padding: 0rem 0rem;
+	}
+}
+
 a, a:hover {
 	display: block;
 	height: 100%;
 	width: 100%;
 	text-decoration: none;
 	color: black;
-}
-
-/*Remove as bordas verticais em telas com largura inferior a 1024px*/
-@media (max-width: 1024px) {
-	body {
-		padding: 0rem 0rem;
-	}
 }
 
 .nav {
@@ -96,7 +93,7 @@ span.ativada h4 {
 	width: 35%;
 }
 
-#info {
+.info {
 	width: 50%;
 }
 
@@ -163,27 +160,26 @@ span.ativada h4 {
 
 .animacao {
 	background-color: rgba(149, 175, 213, 0.5);
-	margin-top: -2rem;
 	margin-bottom: 60px;
-	padding-top: 50px;
+	padding-top: 95px;
 	height: 80vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	max-height: 500px;
-	min-height: 480px;
+	max-height: 750px;
+	min-height: 600px;
 }
 
 .slider {
 	width: 100%;
-	height: 120%;
+	height: 100%;
 	overflow: hidden;
 	box-shadow: 0px 7px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .slides {
 	width: 500%;
-	height: 550px;
+	height: 100%;
 	display: flex;
 }
 
@@ -289,7 +285,6 @@ div.sobre img {
 
 div.texto {
 	width: 60%;
-	padding-inline: 5%;
 	text-align: justify;
 }
 
